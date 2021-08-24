@@ -1,0 +1,16 @@
+.items {
+    border:3px;
+    flex: none;
+    align-self: auto;
+    background-color: #fefefe;
+    padding: 20px;
+    border: 1px solid #888;
+}
+
+p span {
+    display: block;
+}
+
+.name {
+    font-weight: bold;
+}
