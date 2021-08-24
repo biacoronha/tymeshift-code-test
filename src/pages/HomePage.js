@@ -9,15 +9,16 @@ class HomePage extends Component {
         this.state = {
             data: null,
             showModal: false,
-            itemToShow: null
+            itemToShow: null,
         }
+        
         this.handleClick = this.handleClick.bind(this)
         this.onHide = this.onHide.bind(this)
     }
     render() {
         return (
             <div>
-                {this.state.data?.map((location, i) =>
+                {this.state.data?.map((location, i) => 
                     <Card location={location} key={i} id={location.id} handleClick={this.handleClick}/>)}
                     <LocationModal location = {this.state.itemToShow} show={this.state.showModal} onHide={this.onHide}/>
             </div>
@@ -28,6 +29,10 @@ class HomePage extends Component {
         fetch("https://6033c4d8843b15001793194e.mockapi.io/api/locations")
             .then(res => res.json())
             .then((result) => {
+                result.map((item) => {
+                    item.views = 0
+                    return item
+                })
                 this.setState({
                     data: result
                 })
@@ -42,10 +47,12 @@ class HomePage extends Component {
     // }
 
     handleClick = id => {
+        const activeItem = this.state.data.find(x => x.id === id)
+        activeItem.views++;
          this.setState({
              showModal:true,
-             itemToShow: this.state.data.find(x => x.id === id)
-         })
+             itemToShow: activeItem,
+         })        
     };
 
     onHide = () => {
