@@ -1,9 +1,9 @@
 import React, {Component, useState} from 'react'
-import SectionAbout from '../modal/SectionAbout'
-import './Card.css'
+import SectionAbout from './locationInfo/SectionAbout'
+import './LocationCard.css'
 
 
-const Card = (props) => (
+const LocationCard = (props) => (
 
     <div className="items" onClick={() => props.handleClick(props.location.id)}>
             <h6 className="name">{props.location.name}</h6>
@@ -12,4 +12,4 @@ const Card = (props) => (
 
 )
 
-export default Card
+export default LocationCard

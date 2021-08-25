@@ -1,7 +1,7 @@
 import React, {Component, useState} from 'react'
 import Header from '../components/common/Header';
-import Card from '../components/locationCard/Card'
-import LocationModal from '../components/modal/LocationModal'
+import LocationCard from '../components/LocationCard'
+import LocationModal from '../components/LocationModal'
 import './HomePage.css'
 
 class HomePage extends Component {
@@ -22,7 +22,7 @@ class HomePage extends Component {
                 <Header/>
                 <div className="home-content">
                     {this.state.data?.map((location, i) => 
-                        <Card location={location} key={i} id={location.id} handleClick={this.handleClick}/>)}
+                        <LocationCard location={location} key={i} id={location.id} handleClick={this.handleClick}/>)}
                         <LocationModal location = {this.state.itemToShow} show={this.state.showModal} onHide={this.onHide}/>
                 </div>
             </div>

@@ -2,8 +2,8 @@ import React  from 'react'
 import {Modal, Button} from 'react-bootstrap'
 import 'bootstrap/dist/css/bootstrap.min.css'
 
-import SectionAbout from './SectionAbout'
-import SectionDescription from './SectionDescription'
+import SectionAbout from './locationInfo/SectionAbout'
+import SectionDescription from './locationInfo/SectionDescription'
 import './LocationModal.css'
 
 const LocationModal = (props) => (

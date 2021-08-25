@@ -19,7 +19,7 @@
 }
 
 .items:hover::before {
-    content: url(../../assets/Edit.svg);
+    content: url(../assets/Edit.svg);
     position: absolute;
     top: 10px;
     right: 10px;
