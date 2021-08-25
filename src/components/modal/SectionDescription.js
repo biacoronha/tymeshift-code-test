@@ -1,10 +1,15 @@
 import React from 'react'
+import './SectionDescription.css'
 
 const SectionDescription = (props) => (
-    <p>
-        <span className="description-title">Description</span>
-        <span className="description">{props.location.description}</span>
-    </p>
+    <ul>
+        <li>
+            <span className="description-title">Description</span>
+        </li>
+        <li>
+            <span className="description">{props.location.description}</span>
+        </li>
+    </ul>
 )
 
 export default SectionDescription

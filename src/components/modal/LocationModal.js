@@ -4,6 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 
 import SectionAbout from './SectionAbout'
 import SectionDescription from './SectionDescription'
+import './LocationModal.css'
 
 const LocationModal = (props) => (
    <div>
