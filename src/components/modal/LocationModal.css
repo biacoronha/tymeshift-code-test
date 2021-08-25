@@ -1,14 +1,29 @@
 
+.modal-content {
+  width: 440px;
+}
 
 .modal-body {
   display: block;
   width: 100%;
+  padding: 15px 25px;
 }
 
 .modal-header {
   border-bottom: 0 none;
+  padding: 16px 25px;
 }
 
 .modal-footer {
   border-top: 0 none;
+  height: 52px;
+}
+
+.btn-primary {
+  background-color: #37B24D;
+  border-radius: 16px;
+  border-color: #37B24D;
+  margin: 0;
+  position: absolute;
+  margin-bottom: 10px;
 }
