@@ -41,14 +41,11 @@ class HomePage extends Component {
                     data: result
                 })
             })
+            .catch(error => {
+                console.log(error)
+                alert("There was a problem trying to fetch data of locations. Try again later!")
+            })
         }
-    //     this.setState({
-    //         data: [{name: "teste 1", id: 1, userCount: "123", createdAt: "24/08/2021" },
-    //         {name: "teste 2", id: 2, userCount: "123", createdAt: "24/08/2021" },
-    //         {name: "teste 3", id: 3, userCount: "123", createdAt: "24/08/2021" },
-    //         {name: "teste 4", id: 4, userCount: "123", createdAt: "24/08/2021" }]
-    //     })
-    // }
 
     handleClick = id => {
         const activeItem = this.state.data.find(x => x.id === id)
