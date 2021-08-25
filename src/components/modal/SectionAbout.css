@@ -9,12 +9,14 @@ ul li {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.714;
+    opacity: 80%;
 }
 
 .name {
     font-weight: 700;
     font-size: 18px;
     line-height: 1.778;
+    opacity: 80%;
 }
 
 ul li i {
