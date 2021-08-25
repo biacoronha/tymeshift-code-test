@@ -29,12 +29,15 @@ ul li i {
 
 .icon-users::before {
     content: url(../../assets/Users.svg);
+    opacity: 30%;
 }
 
 .icon-createdAt::before {
     content: url(../../assets/Timezone.svg);
+    opacity: 30%;
 }
 
 .icon-views::before {
     content: url(../../assets/Views.svg);
+    opacity: 30%;
 }

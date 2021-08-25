@@ -20,7 +20,7 @@ class HomePage extends Component {
         return (
             <div>
                 <Header/>
-                <div>
+                <div className="home-content">
                     {this.state.data?.map((location, i) => 
                         <Card location={location} key={i} id={location.id} handleClick={this.handleClick}/>)}
                         <LocationModal location = {this.state.itemToShow} show={this.state.showModal} onHide={this.onHide}/>

@@ -3,3 +3,7 @@ div {
     flex-wrap: wrap;
     align-content: flex-start;
 }
+
+.home-content {
+    padding: 0 60px;
+}
