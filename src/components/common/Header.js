@@ -1,10 +1,11 @@
 import React from 'react'
+import './Header.css'
 
 const Header = (props) =>(
-    <div className="header_title">
-       <span>All Locations</span>
-       <span>Company locations</span>
-    </div>
+    <p className="header">
+       <h5 className="section-title">All Locations</h5>
+       <h6 className="header-name">Company locations</h6>
+    </p>
 
 )
 

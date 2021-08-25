@@ -1,19 +1,13 @@
 import React, {Component, useState} from 'react'
+import SectionAbout from '../modal/SectionAbout'
 import './Card.css'
 
 
 const Card = (props) => (
 
     <div className="items" onClick={() => props.handleClick(props.location.id)}>
-        <p>
-            <span className="name">{props.location.name}</span>
-            <span className="users">{props.location.userCount}</span>
-            <span className="created">{props.location.createdAt}</span>
-            <span className="views">{props.location.views}</span>
-        </p>
-        {
-            
-        }
+            <h6 className="name">{props.location.name}</h6>
+            <SectionAbout location={props.location}/>
     </div>
 
 )

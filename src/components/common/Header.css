@@ -1,0 +1,28 @@
+.header {
+    background-color: #FFFFFF;
+    width: 100%;
+    border-bottom: 1px solid #eaeced;
+    height: 96;
+}
+
+p span {
+    display: block;
+}
+
+.header-name {
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 1.273;
+    color: #001122;
+    opacity: 80%;
+}
+
+.section-title {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.75;
+    color: #001122;
+    opacity: 20%;
+
+}
+

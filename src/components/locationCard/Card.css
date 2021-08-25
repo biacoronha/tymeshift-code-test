@@ -2,15 +2,15 @@
     border:3px;
     flex: none;
     align-self: auto;
-    background-color: #fefefe;
-    padding: 20px;
-    border: 1px solid #888;
-}
-
-p span {
+    background-color: #F6F6F6 20%;
+    padding: 15px 70px 15px 20px;
+    border: 1px solid #001122 10%;
     display: block;
+    margin: 10px;
+    color: #001122;
+    border-radius: 2px
 }
 
-.name {
-    font-weight: bold;
+.items:hover {
+    background-color: #F6F6F6;
 }
