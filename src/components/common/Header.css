@@ -2,11 +2,10 @@
     background-color: #FFFFFF;
     width: 100%;
     border-bottom: 1px solid #eaeced;
-    height: 96;
-}
-
-p span {
+    height: 96px;
     display: block;
+    padding-left: 30px;
+    margin-bottom: 12.5px;
 }
 
 .header-name {
@@ -15,6 +14,8 @@ p span {
     line-height: 1.273;
     color: #001122;
     opacity: 80%;
+    padding-bottom: 21px;
+    margin: 0;
 }
 
 .section-title {
@@ -23,5 +24,7 @@ p span {
     line-height: 1.75;
     color: #001122;
     opacity: 20%;
+    padding-top: 19px;
+    margin: 0;
 }
 

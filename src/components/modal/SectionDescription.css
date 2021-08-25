@@ -1,7 +1,7 @@
 ul {
     display: block;
     padding-left: initial !important;
-    margin-bottom: 0 !important;
+    /* margin-bottom: 0 !important; */
 }
 
 ul li {

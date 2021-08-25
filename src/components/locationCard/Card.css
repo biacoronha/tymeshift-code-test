@@ -2,13 +2,15 @@
     border:3px;
     flex: none;
     align-self: auto;
-    background-color: #F6F6F6 20%;
-    padding: 15px 70px 15px 20px;
-    border: 1px solid #001122 10%;
+    background-color: RGBA(246, 246, 246, 0.2);
+    padding: 15px 25px;
+    border: 1px solid RGBA(0, 17, 34, 0.1);
     display: block;
-    margin: 10px;
+    margin: 12.5px;
     color: #001122;
-    border-radius: 2px
+    border-radius: 2px;
+    width: 340px;
+    height: 139px;
 }
 
 .items:hover {

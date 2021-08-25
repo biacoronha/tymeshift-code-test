@@ -1,7 +1,7 @@
 ul {
     display: block;
     padding-left: initial !important;
-    margin-bottom: 0 !important;
+    margin-bottom: 15px !important;
 }
 
 ul li {
@@ -17,6 +17,7 @@ ul li {
     font-size: 18px;
     line-height: 1.778;
     opacity: 80%;
+    margin-bottom: 5px;
 }
 
 ul li i {
