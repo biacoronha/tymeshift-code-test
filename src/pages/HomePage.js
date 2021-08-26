@@ -21,8 +21,8 @@ class HomePage extends Component {
             <div>
                 <Header/>
                 <div className="home-content">
-                    {this.state.data?.map((location, i) => 
-                        <LocationCard location={location} key={i} id={location.id} handleClick={this.handleClick}/>)}
+                    {this.state.data?.map((location, i) =>
+                        <LocationCard location={location} handleClick={this.handleClick}/>)}
                         <LocationModal location = {this.state.itemToShow} show={this.state.showModal} onHide={this.onHide}/>
                 </div>
             </div>
@@ -35,6 +35,7 @@ class HomePage extends Component {
             .then((result) => {
                 result.map((item) => {
                     item.views = 0
+                    item.createdAt = this.formatDate(item.createdAt)
                     return item
                 })
                 this.setState({
@@ -60,6 +61,16 @@ class HomePage extends Component {
         this.setState({
             showModal: false
         })
+    }
+
+    formatDate(createdAt) {
+        var date = new Date(createdAt)
+        const gmt = date.toString().match(/GMT.{5}/i)[0]
+        const hours = date.getHours()
+        const minutes = date.getMinutes()
+        const ampm = 0 <= hours < 12 ? 'am' : 'pm'
+        console.log(gmt)
+        return hours + ':' + minutes + ampm + ' ('+gmt+')'
     }
 
 }
