@@ -1,5 +1,4 @@
 # Tymeshift react-code-test
-======
 
 This project was developed as part of Tymeshift's coding challenge.
 The goal was to create a small application based on the specs and designs provided.
