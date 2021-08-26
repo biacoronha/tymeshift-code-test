@@ -2,8 +2,6 @@
 
 This project was developed as part of Tymeshift's coding challenge: https://github.com/Tymeshift/react-code-test
 
-The goal was to create a small application based on the specs and designs provided.
+The goal was to create a small application in React based on the specs and designs provided.
 
-
-I tried my best to make it as similar to what was provided as possible, however, I'm not sure if the font is the correct one.
-I saw on sketch that the font used was 'Lato', so I installed it in my project.
+I created this application as similar to what was provided as I could, trying to develop a clean code, with easy to undestand structure and tests for all the components
