@@ -67,7 +67,7 @@ class HomePage extends Component {
         var date = new Date(createdAt)
         const gmt = date.toString().match(/GMT.{5}/i)[0]
         const hours = date.getHours()
-        const minutes = date.getMinutes()
+        const minutes = (date.getMinutes()<10?'0':'') + date.getMinutes()
         const ampm = 0 <= hours < 12 ? 'am' : 'pm'
         console.log(gmt)
         return hours + ':' + minutes + ampm + ' ('+gmt+')'
